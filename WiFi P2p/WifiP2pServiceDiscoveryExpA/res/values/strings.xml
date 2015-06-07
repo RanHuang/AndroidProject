@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WifiP2pActiveScanExp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="text_me">Me</string>
+    <string name="text_peers">Available Peers</string>
+    <string name="empty_message">No available devices.</string>
+    
+    <string name="button_requestService">Request</string>
+    <string name="button_clearRequests">ClearReq</string>
+    <string name = "button_disconnect">Disconnect</string>
+    <string name="button_startService">StartService</string>
+    <string name="button_clearService">ClearService</string>
+
+</resources>

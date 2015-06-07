@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ListView 
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></ListView>
+    <!-- 很奇怪，当list条目较少可以在一个屏幕显示时，关闭按钮出现，但是当list条目较多，无法再一个屏中显示，通过下拉列表显示时
+    button_close不能显示,可以去掉该按键，通过返回键代替 -->
+    <Button android:id="@+id/button_close"
+        android:layout_below="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_close"/>
+</RelativeLayout>

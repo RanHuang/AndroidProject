@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PhoneMessage</string>
+    <string name="hello_world">Hello, PhoneDemo!</string>
+    <string name="editText_hint">EditText</string>
+    <string name="button_text">拨打电话</string>
+    <string name="smsText">接收短信</string>
+    <string name="textViewrRecvMan_text">收件人</string>
+    <string name="EditTextRecvMan_hint">收件人</string>
+      
+    <string name="textViewrMsm_text">短信内容</string>
+ 	<string name="msmContext_hint">短信内容</string>
+ 	<string name="buttonSend_text">发送</string>
+</resources>

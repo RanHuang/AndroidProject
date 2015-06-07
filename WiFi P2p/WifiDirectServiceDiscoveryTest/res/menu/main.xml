@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.wifidirectservicediscoverytest.MainActivity" >
+
+    <item
+        android:id="@+id/action_startServiceDiscoveryTest"
+        android:orderInCategory="100"
+        android:title="@string/action_startServiceDiscoveryTest"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:showAsAction="ifRoom|withText" />
+    
+    <item 
+        android:id="@+id/action_startActiveScanTest"
+        android:orderInCategory="90"
+        android:title="@string/action_startActiveScanTest"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:showAsAction="ifRoom|withText"/>
+    
+    <item android:id="@+id/action_back"
+        android:orderInCategory="110"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="@string/action_back"
+        android:showAsAction="ifRoom|withText"/>
+
+</menu>

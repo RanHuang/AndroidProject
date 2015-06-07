@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item android:id="@+id/action_back"
+        android:orderInCategory="110"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="@string/action_back"
+        android:showAsAction="ifRoom|withText"/>
+	
+</menu>

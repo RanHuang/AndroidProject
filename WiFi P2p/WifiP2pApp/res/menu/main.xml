@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="hrylab.xjtu.wifip2papp.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_settings"/>
+    <item 
+        android:id="@+id/action_startTest"
+        android:orderInCategory="90"
+        android:title="@string/action_startTest"
+        android:icon="@android:drawable/sym_def_app_icon"
+         android:showAsAction="ifRoom|withText"/>
+    
+    <item android:id="@+id/action_back"
+        android:orderInCategory="110"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="@string/action_back"
+        android:showAsAction="ifRoom|withText"/>
+
+</menu>

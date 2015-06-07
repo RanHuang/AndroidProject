@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WiFiDirectDemo</string>
+    <!-- activity_wifi_direct.xml -->
+    <string name="scan_select_title">select a device to connect</string>
+    <string name="empty_message">No available devices.</string>
+    
+    <string name="button_doSomething">File Transfer</string>
+    
+    <!-- menu/menu_wifidirect.xml -->
+    <string name="menu_item_scan">scan</string>
+    <string name="menu_item_back">back</string>
+    
+
+</resources>

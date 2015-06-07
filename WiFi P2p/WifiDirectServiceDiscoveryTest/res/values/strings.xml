@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name_main">WifiP2pTest</string>
+    <string name="app_name_servicediscovery">ServiceDiscoveryActivity</string>
+    <string name="app_name_activescan">ActiveScanActivity</string>
+    
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="action_startServiceDiscoveryTest">Discovery</string>
+    <string name="action_startActiveScanTest">Active</string>
+    <string name="action_back">Back</string>
+    
+    <string name="button_startService">Start Discovery Service</string>
+    <string name="button_stopService">Stop Discovery Service</string>
+    <string name="button_startRequest">Start Service Request</string>
+    <string name="button_stopRequest">Stop Service Request</string>
+
+</resources>

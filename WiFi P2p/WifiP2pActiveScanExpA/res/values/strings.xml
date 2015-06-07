@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WifiP2pActiveScanExpA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="text_me">Me</string>
+    <string name="text_peers">Available Peers</string>
+    <string name="empty_message">No available devices.</string>
+    
+    <string name="button_startAutoScan">Start</string>
+    <string name="button_stopAutoScan">Stop</string>
+    <string name="button_setGO">SetGO</string>
+
+</resources>

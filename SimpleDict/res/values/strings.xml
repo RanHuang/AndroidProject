@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- main.xml -->
+    <string name="app_name">生词本</string>
+    <string name="action_settings">Settings</string>
+	
+    <string name="textView_word">输入生词</string>
+    <string name="editWord_hint">生词</string>
+    <string name="textView_explain">单词解释:</string>
+    <string name="editExplain_hint">请输入生词解释</string>
+    <string name="buttonAdd_text">添加生词</string>
+    
+    <string name="textView_showNum">生词总数:</string>
+    
+    <string name="editSearch_hint">请输入查询的生词</string>
+    <string name="button_search">查找</string>
+    
+    <!-- search_result.xml -->
+    <string name="editText_searchWrod_hint">生词</string>
+    <string name="textView_search_explain">解释</string>
+    <string name="button_close">关闭</string>
+    
+    <string name="app_search">找到的单词</string>
+    
+</resources>

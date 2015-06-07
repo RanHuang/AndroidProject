@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.simpledict.DictActivity" >
+
+	<LinearLayout 
+	    android:id="@+id/linearNewWord"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <TextView android:paddingLeft="3sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/textView_word"
+	        android:textSize="16sp" />
+	    <EditText android:id="@+id/edit_word"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/editWord_hint"/>    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/linearNewExplain"
+	    android:layout_below="@+id/linearNewWord"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <TextView android:paddingLeft="3sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/textView_explain"
+	        android:textSize="16sp" />
+	    <EditText android:id="@+id/edit_explain"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/editExplain_hint"/>   
+	         
+	</LinearLayout>
+	<Button android:id="@+id/button_add"
+	    android:layout_below="@+id/linearNewExplain"
+	    android:layout_marginTop="20dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/buttonAdd_text" />
+	
+
+	<TextView 
+	    android:id="@+id/textView_WordNum"
+	    android:layout_below="@+id/button_add"
+	    android:paddingLeft="3sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/textView_showNum"
+	    android:textSize="16sp" />
+
+	
+	<LinearLayout 
+	    android:id="@+id/linearWordSearch"
+	    android:layout_below="@+id/textView_WordNum"
+	    android:layout_marginTop="10dp"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+
+	    <EditText android:id="@+id/edit_serach"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/editSearch_hint"/>
+	    <Button android:id="@+id/button_search"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/button_search"/>    
+	</LinearLayout>
+	
+</RelativeLayout>

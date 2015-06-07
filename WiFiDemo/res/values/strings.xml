@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WiFiDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="wifi_open">打开WiFi</string>
+    <string name="wifi_close">关闭WiFi</string>
+    <string name="wifi_search">扫描WiFi</string>
+    <string name="wifi_check">检查WiFi</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestWidgetDemo</string>
+    <string name="hello_world">Hello world, WidgetDemoActivity!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="buttonA_text">ButtonA</string>
+    <string name="textViewA_text">TextViewA</string>
+    <string name="textViewB_text">通过xml布局文件设置TextView字体样式</string>
+    <string name="editTextA_text">编辑框</string>
+
+</resources>

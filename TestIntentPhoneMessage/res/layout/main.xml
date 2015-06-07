@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <EditText android:id="@+id/editText"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"      
+        android:hint="@string/editText_hint"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="80dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/button_text" />
+    <EditText android:id="@+id/smsText"
+        android:layout_below="@+id/button"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/smsText"/>
+    
+    <LinearLayout
+        android:id="@+id/recvMan"
+        android:layout_below="@+id/smsText"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textViewRecvMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/textViewrRecvMan_text" />
+        <EditText 
+            android:id="@+id/editTextRecvMan"
+            android:layout_marginLeft="25dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/EditTextRecvMan_hint" />
+    </LinearLayout>
+        
+    <LinearLayout
+        android:id="@+id/recvMsm"
+        android:layout_below="@+id/recvMan"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+     	<TextView
+           	android:id="@+id/textViewMsm"
+           	android:layout_width="wrap_content"
+           	android:layout_height="wrap_content"
+           	android:layout_marginLeft="15dp"
+           	android:text="@string/textViewrMsm_text" />
+       	<EditText 
+           	android:id="@+id/editTextMsm"
+           	android:layout_marginLeft="15dp"
+           	android:layout_width="fill_parent"
+           	android:layout_height="wrap_content"
+           	android:hint="@string/msmContext_hint" />       	
+     </LinearLayout>
+     <Button 
+         android:id="@+id/buttonSend"
+         android:layout_below="@+id/recvMsm"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:text="@string/buttonSend_text"/>
+    
+</RelativeLayout>

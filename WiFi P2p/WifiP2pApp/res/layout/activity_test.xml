@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingTop="3dp" >
+    
+    <TextView
+        android:id="@+id/text_title_testActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title_testActivity"
+        android:visibility="visible"
+        android:background="#666"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingLeft="5dp" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/holo_blue_light" />
+    
+    <TextView
+        android:id="@+id/text_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_me"
+        android:visibility="visible"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/holo_blue_light" />
+    
+    <!-- self information -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:background="?android:attr/activatedBackgroundIndicator"
+        android:padding="3dip">
+        <ImageView 
+            android:id="@+id/image_machine"
+            android:src="@drawable/machine"
+            android:contentDescription="@null" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:maxWidth="40dp"
+            android:maxHeight="40dp"
+            android:layout_marginRight="2dp"/>
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+            <TextView 
+                android:id="@+id/self_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"/>
+            <TextView 
+                android:id="@+id/self_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="marquee"/>
+        </LinearLayout>  
+        
+        <Button 
+            android:id="@+id/button_cancelConnected"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/button_cancelConnected"
+            android:visibility="gone"/>
+        
+	</LinearLayout>
+	
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/holo_blue_light" />
+    
+    <TextView
+        android:id="@+id/text_peers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_peers"
+        android:visibility="visible"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/holo_blue_light" />
+    
+    <!-- Available peers -->
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false" />
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:text="@string/empty_message" />
+    
+    <!-- For file transfer -->
+     <LinearLayout
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"        
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@android:color/background_dark">
+        <TextView
+            android:id="@+id/text_fileTransfer"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/button_fileTransfer"
+            android:textColor="@android:color/white" >
+        </TextView>
+        
+    </LinearLayout>
+
+     <Button 
+            android:id="@+id/button_fileTransfer"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/button_fileTransfer"/>
+     
+</LinearLayout>

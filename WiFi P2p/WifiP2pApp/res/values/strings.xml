@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_main_name">WifiP2pApp</string>
+   
+    <!-- For Test -->
+    <string name="app_test_name">WifiDirectTest</string>
+         
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_startTest">Start</string>
+    <string name="action_back">Back</string>
+    <string name="action_startScanPeers">StartScan</string>
+    <string name="text_title_testActivity">WifiDirectTestActiviy Started!</string>
+    <string name="empty_message">No available devices.</string>
+    <string name="text_me">Me</string>
+    <string name="text_peers">available peers</string>
+    
+    <string name="button_cancelConnected">Disconnect</string>
+    <string name="button_connect">Connect</string>
+    
+    <string name="button_fileTransfer">TransferFile</string>
+    <string name="button_setServer">SetServer</string>
+    <string name="button_startScan">StartScan</string>
+    <string name="isServer">Server</string>
+    <string name="isClient">Client</string>
+    <string name="button_updateUI">UpdateUI</string>
+    <string name="button_dataTest">DataSendTest</string>
+
+</resources>

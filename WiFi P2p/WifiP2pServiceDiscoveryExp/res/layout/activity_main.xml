@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.wifip2pservicediscoveryexp.MainActivity" >
+
+     <!-- For the operations -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        style="?android:attr/buttonBarStyle">
+        <Button
+            android:id="@+id/button_requestService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_requestService"
+            android:visibility="visible"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle"/>
+        <Button
+            android:id="@+id/button_clearRequests"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_clearRequests"
+            android:visibility="visible"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle"/>
+        
+        <Button
+            android:id="@+id/button_disconnect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_disconnect"
+            android:visibility="visible"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle"/>
+        
+        <Button
+            android:id="@+id/button_startService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_startService"
+            android:visibility="visible"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle" />
+        
+         <Button
+            android:id="@+id/button_clearService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_clearService"
+            android:visibility="visible"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+    
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/holo_blue_light" />
+	
+    <!-- 设置带滚动条的TextView --> 
+    <TextView 
+        android:id="@+id/text_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:singleLine="false"
+        android:maxLines="13"
+        android:scrollbars="vertical"/>
+
+    <TextView
+        android:id="@+id/text_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_me"
+        android:visibility="visible"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/holo_blue_light" />
+    
+    <!-- self information -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:background="?android:attr/activatedBackgroundIndicator"
+        android:padding="3dip">
+        <ImageView 
+            android:id="@+id/image_machine"
+            android:src="@drawable/machine"
+            android:contentDescription="@null" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:maxWidth="40dp"
+            android:maxHeight="40dp"
+            android:layout_marginRight="2dp"/>
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+            <TextView 
+                android:id="@+id/text_selfName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical"/>
+            <LinearLayout 
+            	android:orientation="horizontal"
+            	android:layout_width="0dp"
+            	android:layout_height="0dp" >
+            	<TextView 
+                	android:id="@+id/text_selfStatus"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:singleLine="true"
+                	android:ellipsize="marquee"/>
+            	
+            	<TextView 
+                	android:id="@+id/text_selfRole"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:singleLine="true"
+                	android:ellipsize="marquee"/>            	
+            </LinearLayout> 
+            
+        </LinearLayout>      
+	</LinearLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/holo_blue_light" />
+    
+    <TextView
+        android:id="@+id/text_peers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_peers"
+        android:visibility="visible"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/holo_blue_light" />
+    
+    <!-- Available peers -->
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false" />
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/empty_message" />
+
+</LinearLayout>
